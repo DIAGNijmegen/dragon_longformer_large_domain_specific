@@ -11,7 +11,7 @@ class DragonLongformerLargeDomainSpecific(DragonBaseline):
         self.model_name = "joeranbosma/dragon-longformer-large-domain-specific"
         self.per_device_train_batch_size = 1
         self.gradient_accumulation_steps = 8
-        self.gradient_checkpointing = False
+        self.gradient_checkpointing = True
         self.max_seq_length = 512
         self.learning_rate = 1e-05
 
